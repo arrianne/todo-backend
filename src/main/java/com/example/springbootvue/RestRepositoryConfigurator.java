@@ -5,7 +5,8 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.stereotype.Component;
 
 // IDs are not returned by RestRepository by default.
-// Exposed them here so you can easily find the ID of created and listed resources.
+// This class is just a configuration class. The whole purpose of it is to tell Spring to return the data model instance IDs with the object serializations
+// (that way you can refer to them by ID from the client app since this is going to be the UUID).
 
 
 @Component
